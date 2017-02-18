@@ -1,0 +1,28 @@
+
+########### Change cached GitHub.com user password in Windows ############
+
+- In Start menu, search for "Credential Manager"
+- Go to Credential Manager > Windows Credentials  > Generic Credentials > github.com
+- Click on remove.
+- THis will remove cached GitHub.com password
+- Next time during "git push" you will be prompted for GitHub.com user & password.
+- Next time when you enter credentials, those will again be stored in windows Credential Manager. So repeate.
+
+
+########### Change user name & email of committer ##################
+
+ravik@RupsRaviPC MINGW64 /c/STUDY/RUPS_GIT/MyGitHubRepo (master)
+$ git config --global --edit
+
+ravik@RupsRaviPC MINGW64 /c/STUDY/RUPS_GIT/MyGitHubRepo (master)
+$ git config --global user.name "Roopali-Ghodke"
+
+ravik@RupsRaviPC MINGW64 /c/STUDY/RUPS_GIT/MyGitHubRepo (master)
+$ git config --global user.email "roopali.kharatmal@gmail.com"
+
+ravik@RupsRaviPC MINGW64 /c/STUDY/RUPS_GIT/MyGitHubRepo (master)
+$ git config --global --edit
+
+
+
+
