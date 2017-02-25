@@ -24,5 +24,18 @@ ravik@RupsRaviPC MINGW64 /c/STUDY/RUPS_GIT/MyGitHubRepo (master)
 $ git config --global --edit
 
 
+Commands -
 
+* git status - it shows the staus of the file. It also shows the untracked files, modified files, and staged files(those files which are ready to be committed).
+
+* git add fileName or git add directories/fileName - adds file changes in the working directory.
+
+* git commit - Takes all of the changes written in the index, creates a new commit object pointing to it and sets the branch to point to that new commit.
+  git commit - m "commit comments" - you can add comments in command line
+
+* gir remote - shows all remote versions of your repository.
+
+* git remote -v - shows the current repository to which the changed or new files is going to be pushed. Its better to check this before commiting any file to make sure its your repo when multiple users are using.
+
+* git push - the final step pushes all your changed file on your remote repository.
 
