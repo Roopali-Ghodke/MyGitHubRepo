@@ -1,0 +1,119 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <context-param>
+  	<param-name>file-upload</param-name>
+  	<param-value>
+  		C:\STUDY\apache-tomcat-8.5.11-windows-x64\apache-tomcat-8.5.11\webapps\data\
+  	</param-value>
+  	<description>Location to store uploaded file</description>
+  </context-param>
+  
+  
+  <!-- ============================================================ -->
+  <!--							Filters 							-->
+  <!-- ============================================================ -->
+  
+  
+  <filter>
+  	<filter-name>LogFilter</filter-name>
+  	<filter-class>com.rups.filter.LogFilter</filter-class>
+  	<init-param>
+  		<param-name>test-param</param-name>
+  		<param-value>Initialization Parameters</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>LogFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <!-- ============================================================= -->
+  <!--                         <Servlet>                             -->
+  <!-- ============================================================= -->
+  
+  
+  <servlet>
+  	<servlet-name>FormServlet</servlet-name>
+  	<servlet-class>com.rups.servlet.FormServlet</servlet-class>
+  </servlet>
+    
+  <servlet>
+  	<servlet-name>ErrorHandler</servlet-name>
+  	<servlet-class>com.rups.error.ErrorHandler</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>FileUpload</servlet-name>
+  	<servlet-class>com.rups.file.FileUploadServlet1</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>DatabaseAcces</servlet-name>
+  	<servlet-class>com.rups.databaseConnection.DatabaseAccessServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>PageRedirect</servlet-name>
+  	<servlet-class>com.rups.pageRedirect.PageRedirectServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>RefreshServlet</servlet-name>
+  	<servlet-class>com.rups.countRefresh.RefreshServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>RefreshServlet</servlet-name>
+  	<url-pattern>/RefreshServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>PageRedirect</servlet-name>
+  	<url-pattern>/PageRedirect</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DatabaseAcces</servlet-name>
+  	<url-pattern>/Database</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>FileUpload</servlet-name>
+  	<url-pattern>/FileUpload</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>FormServlet</servlet-name>
+  	<url-pattern>/Form</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet-mapping>
+  	<servlet-name>ErrorHandler</servlet-name>
+  	<url-pattern>/ErrorHandler</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- ============================================================ -->
+  <!--							Error 						 	    -->
+  <!-- ============================================================ -->
+  
+  
+   <error-page>
+  	<error-code>404</error-code>
+  	<location>/ErrorHandler</location>
+  </error-page>
+  
+  <error-page>
+  	<exception-type>java.lang.Throwable</exception-type>
+  	<location>/ErrorHandler</location>
+  </error-page> 
+  
+</web-app>

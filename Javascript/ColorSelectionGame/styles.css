@@ -1,0 +1,53 @@
+.box{
+	height : 100px;
+	width : 100px;
+	
+	border-radius : 10px;
+	border-color : black;
+	margin : 10px;
+}
+
+body{
+	align : center;	
+	background-color : black;
+}
+
+.rgb-display{
+	background-color : rgb(117, 78, 132);	
+	padding : 10px;
+	text-align : center;
+	color : white;
+	font-weight : bold;
+	font-family : Georgia, serif
+}
+
+.div-display{
+	text-align : center;
+																															
+}
+
+#message-display{
+	background-color : white;
+	text-align : center;
+	padding : 20px;
+	color : rgb(117, 78, 132);
+}
+
+#match {
+	color : black;
+	margin-left : 7cm;
+	font-weight : bold;
+	font-family : "Arial Black", Gadget, sans-serif;
+	font-size : 20px;
+	color : rgb(117, 78, 132);
+}
+
+#play-again{
+	display: inline-block; 
+	margin-left : -10cm;
+	font-weight : bold;
+	font-family : "Arial Black", Gadget, sans-serif;
+	font-size : 20px;
+	color : rgb(117, 78, 132);
+}
+			

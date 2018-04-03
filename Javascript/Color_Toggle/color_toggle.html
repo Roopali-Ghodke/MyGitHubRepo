@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Click Me </title>
+	</head>
+	
+	<body id="colorchange">
+	
+		<button onclick="myFunction()"> Click Me </button>
+		
+		<script>
+			function myFunction(){			
+				var color = document.getElementById('colorchange');
+				color.style.background  = (color.style.background == "pink") ? "white" : "pink";
+			}
+		</script>
+	</body>
+</html>
