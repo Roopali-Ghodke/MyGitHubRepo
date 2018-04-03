@@ -164,5 +164,5 @@ function box6_match(){
 		document.getElementById("play-again").innerHTML = "New Colors !";
 		boxes[5].style.backgroundColor = "black";
 	}
-} 
+}
 
