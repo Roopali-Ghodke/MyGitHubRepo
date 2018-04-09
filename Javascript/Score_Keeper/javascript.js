@@ -41,4 +41,4 @@ function reset(){
 	document.getElementById('player1').innerHTML = 0;
 	document.getElementById('player2').innerHTML = 0;
 	document.getElementById('numbercount').value = 0;
-}
+} 
