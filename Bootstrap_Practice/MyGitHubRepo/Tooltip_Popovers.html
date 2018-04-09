@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Tooltip & Popovers Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1> Tooltip Example </h1>
+			<a href="#" data-toggle="tooltip" data-placement="top" title="Top Hooray!">Top</a>
+			<a href="#" data-toggle="tooltip" data-placement="bottom" title="Bottom Hooray!">Bottom<a>
+			<a href="#" data-toggle="tooltip" data-placement="left" title="Left Hooray!">Left<a>
+			<a href="#" data-toggle="tooltip" data-placement="right" title="Right Hooray!">Right<a>
+			
+			<script>
+				$(document).ready(function(){
+					$('[data-toggle="tooltip"]').tooltip();
+				});
+			</script>
+			
+			<h1> Popovers Example </h1>
+			<a href="#" data-toggle="popover" data-placement="top" data-trigger="hover" titile="Top Pop Header" data-content="top poover example">Top</a>
+			<a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" titile="Bottom Pop Header" data-content="bottom poover example">Bottom</a>
+			<a href="#" data-toggle="popover" data-placement="left" titile="Left Pop Header" data-content="left poover example">Left</a>
+			<a href="#" data-toggle="popover" data-placement="right" titile="Right Pop Header" data-content="right poover example">Right</a>
+			
+			<script>
+				$(document).ready(function(){
+					$('[data-toggle="popover"]').popover();
+				});
+			</script>
+		</div>
+	</body>
+<html>

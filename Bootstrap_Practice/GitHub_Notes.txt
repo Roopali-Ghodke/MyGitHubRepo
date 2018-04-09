@@ -1,0 +1,10 @@
+GitHub Notes -
+
+- Start with Git Bash
+- Side by log-in into github and create a repository
+- Get into the folder using cd.
+- command - 
+  ls -la -> lists all of the files from the present directory.
+  git init -> initializes empty git repository in the current directory.
+  ls -rf .git -> removes the git repository from the current directory.
+  

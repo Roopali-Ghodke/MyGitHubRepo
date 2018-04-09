@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Collapse Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Collpasible Button</button>
+			<div id="demo" class="collapse">
+				<p>fjvnklfnvmnfljvnlknfvrlknvkndflknvlkmnfv</p>	
+			</div>
+			
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#" data-toggle="collapse" data-target="#demo1">Collapse heading</a>
+						</div>
+					</div>
+					<div class="collapse" id="demo1">
+						<div class="panel-body">
+							<p> Body </p>
+						</div>
+						<div class="panel-footer">
+							<p> Footer </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<h2>Accordion</h2>
+			
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse1" data-toggle="collapse" data-parent="#accordion">Collapse 1</a>
+						</div>
+					</div>
+					<div class="panel panel-collapse collapse" id="collapse1">
+						<p class="panel-body">This is collapse 1</p>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse2" data-toggle="collapse" data-parent="#accordion">Collapse 2</a>
+						</div>
+					</div>
+					<div class="panel panel-collapse collapse" id="collapse2">
+						<p class="panel-body">This is collapse 2</p>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#collapse3" data-toggle="collapse" data-parent="#accordion">Collapse 3</a>
+						</div>
+					</div>
+					<div class="panel panel-collapse collapse" id="collapse3">
+						<p class="panel-body">This is collapse 3</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+<html>
